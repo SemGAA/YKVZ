@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | УКВЗ</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <!-- Шапка как на главной странице -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../assets/img/news/news-bg.jpg');">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-hero-title">Новости</h1>
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Главная</a></li>
+                            <li>Новости</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Filter -->
+        <section class="news-filter-section">
+            <div class="container">
+                <div class="filter-wrapper">
+                    <div class="filter-group">
+                        <label for="news-year">Год:</label>
+                        <select id="news-year" class="filter-select">
+                            <option value="all">Все годы</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="news-category">Категория:</label>
+                        <select id="news-category" class="filter-select">
+                            <option value="all">Все категории</option>
+                            <option value="production">Производство</option>
+                            <option value="events">Мероприятия</option>
+                            <option value="awards">Награды</option>
+                        </select>
+                    </div>
+                    
+                    <button id="reset-news-filters" class="btn btn-outline">Сбросить фильтры</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section class="news-grid-section">
+            <div class="container">
+                <div class="news-container" id="news-container">
+                    <!-- Новость 1 -->
+                    <article class="news-card" data-year="2023" data-category="production">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-1.jpg" alt="Новая линия сборки" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">мая</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Производство</span>
+                                <span class="news-comments">5 комментариев</span>
+                            </div>
+                            <h2 class="news-title">Запуск новой линии сборки вагонов</h2>
+                            <p class="news-excerpt">На Усть-Катавском вагоностроительном заводе введена в эксплуатацию новая автоматизированная линия сборки вагонов. Это позволит увеличить производительность на 25%.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новость 2 -->
+                    <article class="news-card" data-year="2023" data-category="awards">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-2.jpg" alt="Награждение" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">28</span>
+                                <span class="date-month">апр</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Награды</span>
+                                <span class="news-comments">12 комментариев</span>
+                            </div>
+                            <h2 class="news-title">УКВЗ получил награду "Лучший экспортер года"</h2>
+                            <p class="news-excerpt">Наше предприятие удостоено премии "Лучший экспортер года" в категории "Машиностроение" за значительный вклад в развитие экспортного потенциала региона.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новость 3 -->
+                    <article class="news-card" data-year="2023" data-category="events">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-3.jpg" alt="День открытых дверей" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">12</span>
+                                <span class="date-month">апр</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Мероприятия</span>
+                                <span class="news-comments">8 комментариев</span>
+                            </div>
+                            <h2 class="news-title">День открытых дверей на УКВЗ</h2>
+                            <p class="news-excerpt">Более 200 школьников и студентов посетили Усть-Катавский вагоностроительный завод в рамках дня открытых дверей, посвященного 265-летию предприятия.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новость 4 -->
+                    <article class="news-card" data-year="2022" data-category="production">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-4.jpg" alt="Новая модель вагона" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">20</span>
+                                <span class="date-month">дек</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Производство</span>
+                                <span class="news-comments">3 комментария</span>
+                            </div>
+                            <h2 class="news-title">Презентация новой модели грузового вагона</h2>
+                            <p class="news-excerpt">УКВЗ представил новую модель грузового вагона с улучшенными техническими характеристиками и увеличенным сроком службы.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новость 5 -->
+                    <article class="news-card" data-year="2022" data-category="events">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-5.jpg" alt="Корпоративное мероприятие" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">05</span>
+                                <span class="date-month">ноя</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Мероприятия</span>
+                                <span class="news-comments">7 комментариев</span>
+                            </div>
+                            <h2 class="news-title">Корпоративный турнир по волейболу</h2>
+                            <p class="news-excerpt">На УКВЗ прошел ежегодный корпоративный турнир по волейболу среди работников предприятия. В соревнованиях приняли участие 12 команд.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Новость 6 -->
+                    <article class="news-card" data-year="2021" data-category="awards">
+                        <div class="news-image">
+                            <img src="assets/img/news/news-6.jpg" alt="Награждение" loading="lazy">
+                            <div class="news-date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">окт</span>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <span class="news-category">Награды</span>
+                                <span class="news-comments">4 комментария</span>
+                            </div>
+                            <h2 class="news-title">УКВЗ - лауреат премии "Предприятие года"</h2>
+                            <p class="news-excerpt">Усть-Катавский вагоностроительный завод признан лучшим промышленным предприятием области по итогам 2021 года.</p>
+                            <a href="news-single.html" class="btn btn-small">Читать далее</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="no-news" id="no-news">
+                    <p>По выбранным фильтрам новости не найдены</p>
+                    <button id="reset-news-btn" class="btn btn-red">Сбросить фильтры</button>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="page-nav disabled">← Назад</a>
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <a href="#" class="page-nav">Вперед →</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+            <div class="container">
+                <div class="subscribe-wrapper">
+                    <div class="subscribe-content">
+                        <h2>Подписаться на новости</h2>
+                        <p>Будьте в курсе последних событий УКВЗ. Оставьте ваш email, чтобы получать новости предприятия.</p>
+                    </div>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-red">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Футер как на главной странице -->
+    </footer>
+
+    <script src="assets/js/news-filter.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

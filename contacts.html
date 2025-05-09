@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | УКВЗ</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <!-- Шапка как на главной странице -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../assets/img/contacts/contacts-bg.jpg');">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-hero-title">Контакты</h1>
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Главная</a></li>
+                            <li>Контакты</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Info -->
+        <section class="contacts-info">
+            <div class="container">
+                <div class="contacts-grid">
+                    <div class="contacts-card">
+                        <h2 class="section-title">Контактная информация</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Адрес</h3>
+                                <p>456040, Челябинская обл., г. Усть-Катав, ул. Братьев Коростелевых, 1</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Телефоны</h3>
+                                <p><a href="tel:+73516712345">+7 (35167) 1-23-45</a> (приемная)</p>
+                                <p><a href="tel:+73516712346">+7 (35167) 1-23-46</a> (отдел продаж)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Электронная почта</h3>
+                                <p><a href="mailto:info@ukvz.com">info@ukvz.com</a> (общие вопросы)</p>
+                                <p><a href="mailto:sales@ukvz.com">sales@ukvz.com</a> (отдел продаж)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3>Режим работы</h3>
+                                <p>Пн-Пт: 8:00-17:00</p>
+                                <p>Сб-Вс: выходные</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-card">
+                        <h2 class="section-title">Мы на карте</h2>
+                        <div class="map-container">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&amp;lang=ru_RU&amp;scroll=false" frameborder="0" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments -->
+        <section class="departments-section">
+            <div class="container">
+                <h2 class="section-title">Контактные лица</h2>
+                
+                <div class="departments-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="sales">Отдел продаж</button>
+                        <button class="tab-btn" data-tab="procurement">Отдел закупок</button>
+                        <button class="tab-btn" data-tab="press">Пресс-служба</button>
+                        <button class="tab-btn" data-tab="hr">Отдел кадров</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="sales">
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="assets/img/team/sales-manager.jpg" alt="Иванов А.П." loading="lazy">
+                            </div>
+                            <div class="person-info">
+                                <h3>Иванов Алексей Петрович</h3>
+                                <p class="position">Начальник отдела продаж</p>
+                                <p class="contacts">
+                                    <span class="contact-item"><i class="icon icon-phone"></i> <a href="tel:+73516711222">+7 (35167) 1-12-22</a></span>
+                                    <span class="contact-item"><i class="icon icon-mail"></i> <a href="mailto:sales@ukvz.com">sales@ukvz.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="procurement">
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="assets/img/team/procurement-manager.jpg" alt="Смирнова Е.В." loading="lazy">
+                            </div>
+                            <div class="person-info">
+                                <h3>Смирнова Елена Владимировна</h3>
+                                <p class="position">Начальник отдела закупок</p>
+                                <p class="contacts">
+                                    <span class="contact-item"><i class="icon icon-phone"></i> <a href="tel:+73516711233">+7 (35167) 1-12-33</a></span>
+                                    <span class="contact-item"><i class="icon icon-mail"></i> <a href="mailto:procurement@ukvz.com">procurement@ukvz.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="press">
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="assets/img/team/press-secretary.jpg" alt="Кузнецов Д.С." loading="lazy">
+                            </div>
+                            <div class="person-info">
+                                <h3>Кузнецов Дмитрий Сергеевич</h3>
+                                <p class="position">Пресс-секретарь</p>
+                                <p class="contacts">
+                                    <span class="contact-item"><i class="icon icon-phone"></i> <a href="tel:+73516711244">+7 (35167) 1-12-44</a></span>
+                                    <span class="contact-item"><i class="icon icon-mail"></i> <a href="mailto:press@ukvz.com">press@ukvz.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="hr">
+                        <div class="person-card">
+                            <div class="person-photo">
+                                <img src="assets/img/team/hr-manager.jpg" alt="Петрова О.И." loading="lazy">
+                            </div>
+                            <div class="person-info">
+                                <h3>Петрова Ольга Ивановна</h3>
+                                <p class="position">Начальник отдела кадров</p>
+                                <p class="contacts">
+                                    <span class="contact-item"><i class="icon icon-phone"></i> <a href="tel:+73516711255">+7 (35167) 1-12-55</a></span>
+                                    <span class="contact-item"><i class="icon icon-mail"></i> <a href="mailto:hr@ukvz.com">hr@ukvz.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-content">
+                        <h2 class="section-title">Написать нам</h2>
+                        <p>Используйте форму обратной связи для отправки вашего сообщения. Мы ответим вам в ближайшее время.</p>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Ваше имя *</label>
+                                <input type="text" id="contact-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input type="email" id="contact-email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-subject">Тема сообщения</label>
+                            <input type="text" id="contact-subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Сообщение *</label>
+                            <textarea id="contact-message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-red">Отправить сообщение</button>
+                            <p class="form-notice">* Обязательные для заполнения поля</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Футер как на главной странице -->
+    </footer>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

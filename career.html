@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карьера | УКВЗ</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <!-- Шапка как на главной странице -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../assets/img/career/career-bg.jpg');">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-hero-title">Карьера</h1>
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Главная</a></li>
+                            <li>Карьера</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Intro -->
+        <section class="career-intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <h2 class="section-title">Работа на УКВЗ</h2>
+                        <p>Усть-Катавский вагоностроительный завод - это стабильное предприятие с богатой историей и перспективами развития. Мы предлагаем достойные условия труда, профессиональный рост и социальные гарантии.</p>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💰</div>
+                                <div class="benefit-text">Конкурентная зарплата</div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🏥</div>
+                                <div class="benefit-text">Медицинское страхование</div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🎓</div>
+                                <div class="benefit-text">Обучение и развитие</div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🏖️</div>
+                                <div class="benefit-text">Корпоративный отдых</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <img src="assets/img/career/team.jpg" alt="Коллектив УКВЗ" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vacancies -->
+        <section class="vacancies-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Актуальные вакансии</h2>
+                    <div class="vacancies-filter">
+                        <select id="department-filter" class="filter-select">
+                            <option value="all">Все отделы</option>
+                            <option value="production">Производство</option>
+                            <option value="engineering">Инжиниринг</option>
+                            <option value="quality">ОТК</option>
+                            <option value="management">Управление</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="vacancies-list">
+                    <div class="vacancy-card" data-department="production">
+                        <div class="vacancy-main">
+                            <h3 class="vacancy-title">Сварщик</h3>
+                            <div class="vacancy-department">Производственный цех</div>
+                            <div class="vacancy-salary">от 75 000 руб.</div>
+                        </div>
+                        <div class="vacancy-details">
+                            <div class="vacancy-description">
+                                <h4>Требования:</h4>
+                                <ul>
+                                    <li>Опыт работы сварщиком от 3 лет</li>
+                                    <li>Наличие удостоверения сварщика</li>
+                                    <li>Знание технологий сварки</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy-actions">
+                                <a href="#" class="btn btn-red">Откликнуться</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vacancy-card" data-department="engineering">
+                        <div class="vacancy-main">
+                            <h3 class="vacancy-title">Инженер-конструктор</h3>
+                            <div class="vacancy-department">Конструкторское бюро</div>
+                            <div class="vacancy-salary">от 90 000 руб.</div>
+                        </div>
+                        <div class="vacancy-details">
+                            <div class="vacancy-description">
+                                <h4>Требования:</h4>
+                                <ul>
+                                    <li>Высшее техническое образование</li>
+                                    <li>Опыт работы в КОМПАС-3D или SolidWorks</li>
+                                    <li>Знание ГОСТ и ЕСКД</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy-actions">
+                                <a href="#" class="btn btn-red">Откликнуться</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vacancy-card" data-department="quality">
+                        <div class="vacancy-main">
+                            <h3 class="vacancy-title">Контролер ОТК</h3>
+                            <div class="vacancy-department">Отдел технического контроля</div>
+                            <div class="vacancy-salary">от 65 000 руб.</div>
+                        </div>
+                        <div class="vacancy-details">
+                            <div class="vacancy-description">
+                                <h4>Требования:</h4>
+                                <ul>
+                                    <li>Опыт работы в машиностроении</li>
+                                    <li>Знание методов контроля качества</li>
+                                    <li>Внимательность и ответственность</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy-actions">
+                                <a href="#" class="btn btn-red">Откликнуться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="no-vacancies" id="no-vacancies">
+                    <p>По выбранному фильтру вакансии не найдены</p>
+                    <button id="reset-vacancy-filter" class="btn btn-outline">Сбросить фильтр</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship -->
+        <section class="internship-section">
+            <div class="container">
+                <div class="internship-grid">
+                    <div class="internship-image">
+                        <img src="assets/img/career/internship.jpg" alt="Стажировка" loading="lazy">
+                    </div>
+                    <div class="internship-content">
+                        <h2 class="section-title">Стажировка для студентов</h2>
+                        <p>Мы предлагаем программы стажировки для студентов технических специальностей. Это отличная возможность получить практический опыт работы на современном производстве.</p>
+                        <div class="internship-benefits">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">👨‍🎓</div>
+                                <div class="benefit-text">Практика по специальности</div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💼</div>
+                                <div class="benefit-text">Возможность трудоустройства</div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🏭</div>
+                                <div class="benefit-text">Знакомство с производством</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-red">Подать заявку</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Form -->
+        <section class="resume-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-content">
+                        <h2 class="section-title">Отправить резюме</h2>
+                        <p>Если вы не нашли подходящей вакансии, отправьте нам свое резюме. Мы рассмотрим его и свяжемся с вами при появлении подходящих позиций.</p>
+                        
+                        <div class="form-contacts">
+                            <h3>Контакты отдела кадров:</h3>
+                            <p><i class="icon icon-phone"></i> <a href="tel:+73516711235">+7 (35167) 1-12-35</a></p>
+                            <p><i class="icon icon-mail"></i> <a href="mailto:hr@ukvz.com">hr@ukvz.com</a></p>
+                            <p><i class="icon icon-clock"></i> Пн-Пт: 8:00-17:00</p>
+                        </div>
+                    </div>
+                    
+                    <form class="resume-form">
+                        <div class="form-group">
+                            <label for="resume-name">ФИО *</label>
+                            <input type="text" id="resume-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume-phone">Телефон *</label>
+                            <input type="tel" id="resume-phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume-email">Email *</label>
+                            <input type="email" id="resume-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume-position">Желаемая должность</label>
+                            <input type="text" id="resume-position">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume-experience">Опыт работы</label>
+                            <textarea id="resume-experience" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume-file">Прикрепить резюме (PDF, DOC) *</label>
+                            <input type="file" id="resume-file" required>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-red">Отправить</button>
+                            <p class="form-notice">* Обязательные для заполнения поля</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Футер как на главной странице -->
+    </footer>
+
+    <script src="assets/js/career-filter.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

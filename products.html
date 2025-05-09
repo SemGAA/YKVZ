@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукция | УКВЗ</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body class="dark-theme">
+    <header class="header">
+        <!-- Шапка как на главной странице -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../assets/img/products/products-bg.jpg');">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-hero-title">Наша продукция</h1>
+                    <nav aria-label="breadcrumb" class="breadcrumbs">
+                        <ol>
+                            <li><a href="index.html">Главная</a></li>
+                            <li>Продукция</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Filter -->
+        <section class="products-filter-section">
+            <div class="container">
+                <div class="filter-wrapper">
+                    <div class="filter-group">
+                        <label for="product-type">Тип вагона:</label>
+                        <select id="product-type" class="filter-select">
+                            <option value="all">Все типы</option>
+                            <option value="freight">Грузовые</option>
+                            <option value="passenger">Пассажирские</option>
+                            <option value="special">Специальные</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="product-category">Категория:</label>
+                        <select id="product-category" class="filter-select">
+                            <option value="all">Все категории</option>
+                            <option value="new">Новые модели</option>
+                            <option value="classic">Классические</option>
+                            <option value="premium">Премиум</option>
+                        </select>
+                    </div>
+                    
+                    <button id="reset-filters" class="btn btn-outline">Сбросить фильтры</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-grid-section">
+            <div class="container">
+                <div class="products-container" id="products-container">
+                    <!-- Грузовые вагоны -->
+                    <div class="product-card" data-type="freight" data-category="classic">
+                        <div class="product-image">
+                            <img src="assets/img/products/freight-1.jpg" alt="Грузовой вагон" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Вагон-платформа</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Грузоподъемность:</span>
+                                    <span class="spec-value">71 тонна</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Объем:</span>
+                                    <span class="spec-value">120 м³</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-type="freight" data-category="new">
+                        <div class="product-image">
+                            <img src="assets/img/products/freight-2.jpg" alt="Полувагон" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Полувагон</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Грузоподъемность:</span>
+                                    <span class="spec-value">76 тонн</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Объем:</span>
+                                    <span class="spec-value">85 м³</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Пассажирские вагоны -->
+                    <div class="product-card" data-type="passenger" data-category="classic">
+                        <div class="product-image">
+                            <img src="assets/img/products/passenger-1.jpg" alt="Пассажирский вагон" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Купе вагон</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Вместимость:</span>
+                                    <span class="spec-value">36 человек</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Комфорт:</span>
+                                    <span class="spec-value">Стандарт</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-type="passenger" data-category="premium">
+                        <div class="product-image">
+                            <img src="assets/img/products/passenger-2.jpg" alt="СВ вагон" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>СВ вагон</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Вместимость:</span>
+                                    <span class="spec-value">18 человек</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Комфорт:</span>
+                                    <span class="spec-value">Премиум</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Специальные вагоны -->
+                    <div class="product-card" data-type="special" data-category="new">
+                        <div class="product-image">
+                            <img src="assets/img/products/special-1.jpg" alt="Цистерна" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Цистерна</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Объем:</span>
+                                    <span class="spec-value">120 м³</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Материал:</span>
+                                    <span class="spec-value">Нерж. сталь</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-type="special" data-category="new">
+                        <div class="product-image">
+                            <img src="assets/img/products/special-2.jpg" alt="Рефрижератор" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Рефрижератор</h3>
+                            <div class="product-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Температура:</span>
+                                    <span class="spec-value">-25°C</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Объем:</span>
+                                    <span class="spec-value">90 м³</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-red">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="no-results" id="no-results">
+                    <p>По выбранным фильтрам товары не найдены</p>
+                    <button id="reset-filters-btn" class="btn btn-red">Сбросить фильтры</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Product Categories -->
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Категории продукции</h2>
+                <div class="categories-grid">
+                    <a href="#freight" class="category-card">
+                        <div class="category-icon">🚛</div>
+                        <h3>Грузовые вагоны</h3>
+                        <p>Широкий ассортимент для перевозки различных грузов</p>
+                    </a>
+                    
+                    <a href="#passenger" class="category-card">
+                        <div class="category-icon">🚆</div>
+                        <h3>Пассажирские вагоны</h3>
+                        <p>Комфортабельные решения для перевозки пассажиров</p>
+                    </a>
+                    
+                    <a href="#special" class="category-card">
+                        <div class="category-icon">🚚</div>
+                        <h3>Специальные вагоны</h3>
+                        <p>Вагоны для особых условий и требований</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Футер как на главной странице -->
+    </footer>
+
+    <script src="assets/js/products-filter.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
